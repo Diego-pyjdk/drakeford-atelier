@@ -2676,3 +2676,597 @@ img {
 .dato-ubicacion i {
     font-size: 20px;
 }
+
+.nav a.activo {
+    color: var(--dorado);
+}
+
+.nav a.activo::after {
+    width: 100%;
+}
+
+.nav a {
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.nav a:hover {
+    opacity: 0.85;
+}
+
+/* =========================
+   TARJETAS PREMIUM
+========================= */
+
+.vestido-card {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #151515 0%,
+            #0c0c0c 100%
+        );
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 4px;
+
+    transition:
+        transform 0.45s ease,
+        border-color 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+
+.vestido-card:hover {
+    transform: translateY(-10px);
+
+    border-color:
+        rgba(214, 173, 96, 0.5);
+
+    box-shadow:
+        0 28px 60px
+        rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================
+   IMAGEN
+========================= */
+
+.vestido-imagen {
+    position: relative;
+
+    height: 430px;
+
+    overflow: hidden;
+
+    background: #111;
+}
+
+
+.vestido-imagen img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.8s
+        cubic-bezier(
+            0.16,
+            1,
+            0.3,
+            1
+        );
+}
+
+
+.vestido-card:hover
+.vestido-imagen img {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   ETIQUETAS
+========================= */
+
+.vestido-categoria,
+.estado-vestido {
+    z-index: 4;
+}
+
+
+.vestido-categoria {
+    position: absolute;
+
+    top: 17px;
+    left: 17px;
+
+    padding: 8px 12px;
+
+    background:
+        rgba(7, 7, 7, 0.75);
+
+    backdrop-filter: blur(10px);
+
+    border:
+        1px solid
+        rgba(214, 173, 96, 0.3);
+
+    color: var(--dorado);
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    font-size: 8px;
+}
+
+
+.estado-vestido {
+    position: absolute;
+
+    top: 17px;
+    right: 17px;
+
+    padding: 8px 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    font-size: 8px;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.estado-vestido.disponible {
+    background:
+        rgba(18, 105, 60, 0.8);
+
+    border:
+        1px solid
+        rgba(72, 200, 125, 0.3);
+
+    color: #d4ffe6;
+}
+
+
+.estado-vestido.no-disponible {
+    background:
+        rgba(120, 25, 25, 0.82);
+
+    border:
+        1px solid
+        rgba(220, 80, 80, 0.35);
+
+    color: #ffd5d5;
+}
+
+
+/* =========================
+   OVERLAY
+========================= */
+
+.vestido-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.05) 25%,
+            rgba(0, 0, 0, 0.45) 55%,
+            rgba(0, 0, 0, 0.96) 100%
+        );
+
+    opacity: 0;
+
+    transition:
+        opacity 0.45s ease;
+}
+
+
+.vestido-card:hover
+.vestido-overlay {
+    opacity: 1;
+}
+
+
+.overlay-contenido {
+    width: 100%;
+
+    transform: translateY(20px);
+
+    transition:
+        transform 0.45s ease;
+}
+
+
+.vestido-card:hover
+.overlay-contenido {
+    transform: translateY(0);
+}
+
+
+.overlay-contenido > p {
+    color: var(--dorado);
+
+    font-size: 8px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+
+.overlay-contenido h4 {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 33px;
+
+    font-weight: 500;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   BOTONES DEL OVERLAY
+========================= */
+
+.overlay-acciones {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 8px;
+}
+
+
+.overlay-btn {
+    min-height: 43px;
+
+    padding: 10px 8px;
+
+    border: none;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 8px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.overlay-btn i {
+    margin-right: 5px;
+
+    pointer-events: none;
+}
+
+
+.overlay-detalles {
+    background:
+        rgba(255, 255, 255, 0.07);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.4);
+
+    color: white;
+
+    backdrop-filter: blur(10px);
+}
+
+
+.overlay-detalles:hover {
+    background: white;
+
+    color: #111;
+}
+
+
+.overlay-reservar {
+    background: var(--dorado);
+
+    border:
+        1px solid var(--dorado);
+
+    color: #111;
+}
+
+
+.overlay-reservar:hover {
+    background: var(--dorado-claro);
+}
+
+
+.overlay-reservar:disabled {
+    background: #333;
+
+    border-color: #444;
+
+    color: #888;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   INFORMACIÓN INFERIOR
+========================= */
+
+.vestido-info {
+    padding: 22px 20px 20px;
+}
+
+
+.vestido-info-superior {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.vestido-info h3 {
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 31px;
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+
+.vestido-talla {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #777;
+
+    font-size: 9px;
+
+    margin: 0;
+}
+
+
+.vestido-talla i {
+    color: var(--dorado);
+
+    font-size: 9px;
+}
+
+
+/* =========================
+   FAVORITO
+========================= */
+
+.vestido-favorito {
+    flex: 0 0 auto;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    border:
+        1px solid #333;
+
+    border-radius: 50%;
+
+    color: #aaa;
+
+    cursor: pointer;
+
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.vestido-favorito:hover {
+    color: var(--dorado);
+
+    border-color: var(--dorado);
+
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   PRECIOS PREMIUM
+========================= */
+
+.vestido-precios {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 9px;
+
+    margin-bottom: 0;
+}
+
+
+.precio {
+    padding: 13px 12px;
+
+    background:
+        rgba(255, 255, 255, 0.025);
+
+    border:
+        1px solid #232323;
+}
+
+
+.precio span {
+    display: block;
+
+    color: #6f6f6f;
+
+    font-size: 7px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.1px;
+
+    margin-bottom: 6px;
+}
+
+
+.precio strong {
+    color: var(--dorado-claro);
+
+    font-size: 11px;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   BOTÓN MOBILE
+========================= */
+
+.vestido-ver-mobile {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .vestido-overlay {
+        display: none;
+    }
+
+
+    .vestido-ver-mobile {
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        margin-top: 15px;
+
+        padding: 14px 0;
+
+        background: transparent;
+
+        border: none;
+
+        border-top:
+            1px solid #282828;
+
+        color: white;
+
+        font-family:
+            "Montserrat",
+            sans-serif;
+
+        font-size: 9px;
+
+        text-transform: uppercase;
+
+        letter-spacing: 1px;
+
+        cursor: pointer;
+    }
+
+
+    .vestido-ver-mobile i {
+        color: var(--dorado);
+    }
+
+
+    .vestido-card:hover {
+        transform: none;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .vestido-imagen {
+        height: 480px;
+    }
+
+
+    .vestido-info {
+        padding: 20px 17px;
+    }
+
+}
+
+.vestido-favorito.favorito-activo {
+    color: var(--dorado);
+
+    border-color: var(--dorado);
+
+    background:
+        rgba(214, 173, 96, 0.08);
+}
