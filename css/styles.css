@@ -2622,3 +2622,57 @@ img {
 .whatsapp-flotante i {
     font-size: 28px;
 }
+
+.redes a i,
+.beneficio-icono i,
+.personalizados-sello i,
+.dato-ubicacion i,
+.whatsapp-flotante i,
+.btn-pedido-personalizado i,
+.btn-alquiler i,
+.btn-alquiler-secundario i,
+.btn-contacto-whatsapp i,
+.btn-como-llegar i,
+.modal-btn-reservar i {
+    pointer-events: none;
+}
+
+
+/* separación entre icono y texto */
+
+.btn-pedido-personalizado i,
+.btn-alquiler i,
+.btn-alquiler-secundario i,
+.btn-contacto-whatsapp i,
+.btn-como-llegar i,
+.modal-btn-reservar i {
+    margin-right: 8px;
+}
+
+
+/* whatsapp flotante */
+
+.whatsapp-flotante i {
+    font-size: 28px;
+}
+
+
+/* iconos de redes */
+
+.redes a i {
+    font-size: 17px;
+}
+
+
+/* iconos de beneficios */
+
+.beneficio-icono i {
+    font-size: 24px;
+}
+
+
+/* iconos de ubicación */
+
+.dato-ubicacion i {
+    font-size: 20px;
+}
