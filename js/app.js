@@ -665,3 +665,109 @@ btnComoLlegar.addEventListener(
 
     }
 );
+
+/* =========================
+   HEADER AL HACER SCROLL
+========================= */
+
+const header =
+    document.querySelector(".header");
+
+
+window.addEventListener(
+    "scroll",
+    () => {
+
+        if (window.scrollY > 40) {
+
+            header.classList.add(
+                "scrolled"
+            );
+
+        } else {
+
+            header.classList.remove(
+                "scrolled"
+            );
+
+        }
+
+    }
+);
+
+
+/* =========================
+   ANIMACIONES AL HACER SCROLL
+========================= */
+
+const elementosAnimados =
+    document.querySelectorAll(
+        `
+        .coleccion-encabezado,
+        .vestido-card,
+        .personalizados-imagen,
+        .personalizados-contenido,
+        .alquiler-encabezado,
+        .paso-alquiler,
+        .nosotros-contenido,
+        .valor,
+        .ubicacion-encabezado,
+        .mapa-real,
+        .ubicacion-info,
+        .contacto-contenido
+        `
+    );
+
+
+elementosAnimados.forEach(
+    elemento => {
+
+        elemento.classList.add(
+            "reveal"
+        );
+
+    }
+);
+
+
+const observer =
+    new IntersectionObserver(
+        entradas => {
+
+            entradas.forEach(
+                entrada => {
+
+                    if (
+                        entrada.isIntersecting
+                    ) {
+
+                        entrada.target
+                            .classList.add(
+                                "visible"
+                            );
+
+                        observer.unobserve(
+                            entrada.target
+                        );
+
+                    }
+
+                }
+            );
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+
+elementosAnimados.forEach(
+    elemento => {
+
+        observer.observe(
+            elemento
+        );
+
+    }
+);

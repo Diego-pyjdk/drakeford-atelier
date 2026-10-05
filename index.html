@@ -1,50 +1,136 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>Drakeford Atelier</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+
 </head>
+
 
 <body>
 
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
     <header class="header">
+
         <div class="logo">
-            <span class="logo-principal">DRAKEFORD</span>
-            <span class="logo-secundario">ATELIER</span>
+
+            <span class="logo-principal">
+                DRAKEFORD
+            </span>
+
+            <span class="logo-secundario">
+                ATELIER
+            </span>
+
         </div>
 
+
         <nav class="nav">
-            <a href="#inicio" class="activo">Inicio</a>
-            <a href="#coleccion">Colección</a>
-            <a href="#alquiler">Alquiler</a>
-            <a href="#personalizados">Personalizados</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#contacto">Contacto</a>
+
+            <a
+                href="#inicio"
+                class="activo"
+            >
+                Inicio
+            </a>
+
+            <a href="#coleccion">
+                Colección
+            </a>
+
+            <a href="#alquiler">
+                Alquiler
+            </a>
+
+            <a href="#personalizados">
+                Personalizados
+            </a>
+
+            <a href="#nosotros">
+                Nosotros
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
         </nav>
 
-        <button class="menu-btn" id="menuBtn">
-            ☰
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Abrir menú"
+        >
+            <i class="fa-solid fa-bars"></i>
         </button>
+
     </header>
+
 
 
     <main>
 
-        <section class="hero" id="inicio">
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section
+            class="hero"
+            id="inicio"
+        >
 
             <div class="hero-overlay"></div>
+
 
             <div class="hero-contenido">
 
@@ -52,25 +138,38 @@
                     Alta costura · Elegancia · Exclusividad
                 </p>
 
+
                 <h1>
+
                     DRAKEFORD
-                    <span>ATELIER</span>
+
+                    <span>
+                        ATELIER
+                    </span>
+
                 </h1>
+
 
                 <h2>
                     Elegancia diseñada para ti
                 </h2>
+
 
                 <p class="hero-descripcion">
                     Vestidos que transforman momentos especiales
                     en recuerdos inolvidables.
                 </p>
 
+
                 <div class="hero-botones">
 
-                    <a href="#coleccion" class="btn btn-dorado">
+                    <a
+                        href="#coleccion"
+                        class="btn btn-dorado"
+                    >
                         Ver colección
                     </a>
+
 
                     <button
                         class="btn btn-transparente"
@@ -84,589 +183,953 @@
             </div>
 
 
+
+            <!-- BENEFICIOS HERO -->
+
             <div class="hero-beneficios">
 
-                <div class="beneficio">
-                    <span class="beneficio-icono">✦</span>
-
-                    <div>
-                        <strong>Diseños exclusivos</strong>
-                        <p>Alta costura</p>
-                    </div>
-                </div>
 
                 <div class="beneficio">
-                    <span class="beneficio-icono">♢</span>
+
+                    <span class="beneficio-icono">
+                        <i class="fa-solid fa-gem"></i>
+                    </span>
 
                     <div>
-                        <strong>Compra o alquiler</strong>
-                        <p>Para cada ocasión</p>
+
+                        <strong>
+                            Diseños exclusivos
+                        </strong>
+
+                        <p>
+                            Alta costura
+                        </p>
+
                     </div>
+
                 </div>
+
+
 
                 <div class="beneficio">
-                    <span class="beneficio-icono">♡</span>
+
+                    <span class="beneficio-icono">
+                        <i class="fa-solid fa-tags"></i>
+                    </span>
 
                     <div>
-                        <strong>Asesoría personalizada</strong>
-                        <p>Encuentra tu estilo</p>
+
+                        <strong>
+                            Compra o alquiler
+                        </strong>
+
+                        <p>
+                            Para cada ocasión
+                        </p>
+
                     </div>
+
                 </div>
+
+
+
+                <div class="beneficio">
+
+                    <span class="beneficio-icono">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Asesoría personalizada
+                        </strong>
+
+                        <p>
+                            Encuentra tu estilo
+                        </p>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
         </section>
 
 
-        <section class="coleccion" id="coleccion">
 
-    <div class="coleccion-encabezado">
-        <p class="seccion-etiqueta">
-            Nuestra selección
-        </p>
+        <!-- =========================
+             COLECCIÓN
+        ========================== -->
 
-        <h2>
-            Colección Drakeford
-        </h2>
-
-        <p class="coleccion-descripcion">
-            Descubre vestidos para cada ocasión, disponibles
-            para compra o alquiler.
-        </p>
-    </div>
-
-
-    <div class="filtros">
-
-        <button class="filtro activo" data-categoria="Todos">
-            Todos
-        </button>
-
-        <button class="filtro" data-categoria="Novias">
-            Novias
-        </button>
-
-        <button class="filtro" data-categoria="Gala">
-            Gala
-        </button>
-
-        <button class="filtro" data-categoria="Fiesta">
-            Fiesta
-        </button>
-
-        <button class="filtro" data-categoria="XV Años">
-            XV Años
-        </button>
-
-        <button class="filtro" data-categoria="Alta Costura">
-            Alta Costura
-        </button>
-
-    </div>
-
-    <section class="personalizados" id="personalizados">
-
-    <div class="personalizados-imagen">
-
-        <img
-            src="https://images.pexels.com/photos/33209735/pexels-photo-33209735/free-photo-of-elegant-woman-in-black-evening-gown.jpeg?auto=compress&dpr=1&h=750&w=1260"
-            alt="Mujer con vestido elegante de alta costura"
+        <section
+            class="coleccion"
+            id="coleccion"
         >
 
 
-        <div class="personalizados-imagen-overlay"></div>
+            <div class="coleccion-encabezado">
 
-        <div class="personalizados-sello">
-            <span>✦</span>
-            <p>Diseño exclusivo</p>
-        </div>
-
-    </div>
-
-
-    <div class="personalizados-contenido">
-
-        <p class="seccion-etiqueta">
-            Creado para ti
-        </p>
-
-        <h2>
-            Vestidos
-            <span>Personalizados</span>
-        </h2>
-
-        <p class="personalizados-subtitulo">
-            De una idea a una pieza única.
-        </p>
-
-
-        <p class="personalizados-texto">
-            En Drakeford Atelier creamos vestidos pensados
-            especialmente para cada persona y cada ocasión.
-            Cuéntanos tu idea, estilo y evento, y trabajaremos
-            contigo para convertirlo en un diseño exclusivo.
-        </p>
-
-
-        <div class="personalizados-servicios">
-
-            <div class="servicio-personalizado">
-                <span>01</span>
-
-                <div>
-                    <h3>Tu idea</h3>
-
-                    <p>
-                        Cuéntanos qué estilo, colores y detalles
-                        imaginas para tu vestido.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="servicio-personalizado">
-                <span>02</span>
-
-                <div>
-                    <h3>Diseño</h3>
-
-                    <p>
-                        Definimos juntos los detalles de la pieza
-                        y la propuesta final.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="servicio-personalizado">
-                <span>03</span>
-
-                <div>
-                    <h3>Confección</h3>
-
-                    <p>
-                        Realizamos el vestido cuidando cada
-                        terminación y detalle.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="servicio-personalizado">
-                <span>04</span>
-
-                <div>
-                    <h3>Prueba final</h3>
-
-                    <p>
-                        Realizamos los últimos ajustes para lograr
-                        el resultado ideal.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-
-        <button
-            class="btn-pedido-personalizado"
-            id="btnPedidoPersonalizado"
-        >
-            Hacer un pedido por WhatsApp
-        </button>
-
-    </div>
-
-</section>
-
-<section class="alquiler" id="alquiler">
-
-    <div class="alquiler-encabezado">
-
-        <p class="seccion-etiqueta">
-            Una opción para cada ocasión
-        </p>
-
-        <h2>
-            Alquiler de vestidos
-        </h2>
-
-        <p>
-            Encuentra el vestido ideal para tu evento sin necesidad
-            de comprarlo. Consulta disponibilidad, reserva y disfruta
-            de una experiencia sencilla y personalizada.
-        </p>
-
-    </div>
-
-
-    <div class="alquiler-pasos">
-
-        <article class="paso-alquiler">
-
-            <span class="paso-numero">01</span>
-
-            <h3>
-                Elige tu vestido
-            </h3>
-
-            <p>
-                Explora nuestra colección y encuentra el diseño
-                que mejor se adapte a tu estilo y ocasión.
-            </p>
-
-        </article>
-
-
-        <article class="paso-alquiler">
-
-            <span class="paso-numero">02</span>
-
-            <h3>
-                Consulta disponibilidad
-            </h3>
-
-            <p>
-                Verifica por WhatsApp si el vestido está disponible
-                para la fecha de tu evento.
-            </p>
-
-        </article>
-
-
-        <article class="paso-alquiler">
-
-            <span class="paso-numero">03</span>
-
-            <h3>
-                Reserva
-            </h3>
-
-            <p>
-                Confirma tu reserva y coordina los detalles
-                directamente con Drakeford Atelier.
-            </p>
-
-        </article>
-
-
-        <article class="paso-alquiler">
-
-            <span class="paso-numero">04</span>
-
-            <h3>
-                Retira y disfruta
-            </h3>
-
-            <p>
-                Retira tu vestido según lo acordado y disfruta
-                de tu evento con total tranquilidad.
-            </p>
-
-        </article>
-
-
-        <article class="paso-alquiler">
-
-            <span class="paso-numero">05</span>
-
-            <h3>
-                Devolución
-            </h3>
-
-            <p>
-                Devuelve la prenda en la fecha acordada
-                siguiendo las condiciones del alquiler.
-            </p>
-
-        </article>
-
-    </div>
-
-
-    <div class="alquiler-acciones">
-
-        <button
-            class="btn-alquiler"
-            id="btnVerAlquiler"
-        >
-            Ver vestidos para alquiler
-        </button>
-
-        <button
-            class="btn-alquiler-secundario"
-            id="btnConsultarAlquiler"
-        >
-            Consultar por WhatsApp
-        </button>
-
-    </div>
-
-</section>
-
-<section class="nosotros" id="nosotros">
-
-    <div class="nosotros-contenido">
-
-        <p class="seccion-etiqueta">
-            Nuestra esencia
-        </p>
-
-        <h2>
-            Sobre Drakeford Atelier
-        </h2>
-
-        <p class="nosotros-texto">
-            Drakeford Atelier nace con la idea de ofrecer vestidos
-            elegantes, exclusivos y pensados para momentos especiales.
-            Nuestra propuesta combina alquiler, venta y confección
-            personalizada en un mismo espacio.
-        </p>
-
-        <p class="nosotros-texto">
-            Buscamos que cada persona encuentre un vestido que represente
-            su estilo y la haga sentir única en cada ocasión.
-        </p>
-
-
-        <div class="nosotros-valores">
-
-            <div class="valor">
-                <span>✦</span>
-                <h3>Exclusividad</h3>
-                <p>
-                    Diseños pensados para destacar.
+                <p class="seccion-etiqueta">
+                    Nuestra selección
                 </p>
-            </div>
 
-            <div class="valor">
-                <span>♡</span>
-                <h3>Atención personalizada</h3>
-                <p>
-                    Te acompañamos para encontrar el vestido ideal.
+
+                <h2>
+                    Colección Drakeford
+                </h2>
+
+
+                <p class="coleccion-descripcion">
+                    Descubre vestidos para cada ocasión,
+                    disponibles para compra o alquiler.
                 </p>
-            </div>
-
-            <div class="valor">
-                <span>♢</span>
-                <h3>Elegancia</h3>
-                <p>
-                    Una propuesta moderna con identidad propia.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="ubicacion">
-
-    <div class="ubicacion-encabezado">
-
-        <p class="seccion-etiqueta">
-            Visítanos
-        </p>
-
-        <h2>
-            Nuestra ubicación
-        </h2>
-
-        <p>
-            Visita nuestro atelier y conoce la colección personalmente.
-        </p>
-
-    </div>
-
-
-    <div class="ubicacion-contenido">
-
-        <div class="mapa-placeholder">
-
-            <div>
-                <span>⌖</span>
-
-                <h3>
-                    Drakeford Atelier
-                </h3>
-
-                <p>
-                    Abre Google Maps para ver nuestra ubicación
-                    y obtener indicaciones para llegar.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="ubicacion-info">
-
-            <h3>
-                Drakeford Atelier
-            </h3>
-
-            <div class="dato-ubicacion">
-
-                <span>⌖</span>
-
-                <div>
-                    <strong>Dirección</strong>
-
-                    <p id="direccionTienda">
-                    Ver ubicación en Google Maps
-                    </p>
-                </div>
 
             </div>
 
 
-            <div class="dato-ubicacion">
 
-                <span>◷</span>
+            <!-- FILTROS -->
 
-                <div>
-                    <strong>Horario</strong>
+            <div class="filtros">
 
-                    <p>
-                        Lunes a sábado
-                        <br>
-                        09:00 - 18:00
-                    </p>
-                </div>
+                <button
+                    class="filtro activo"
+                    data-categoria="Todos"
+                >
+                    Todos
+                </button>
+
+
+                <button
+                    class="filtro"
+                    data-categoria="Novias"
+                >
+                    Novias
+                </button>
+
+
+                <button
+                    class="filtro"
+                    data-categoria="Gala"
+                >
+                    Gala
+                </button>
+
+
+                <button
+                    class="filtro"
+                    data-categoria="Fiesta"
+                >
+                    Fiesta
+                </button>
+
+
+                <button
+                    class="filtro"
+                    data-categoria="XV Años"
+                >
+                    XV Años
+                </button>
+
+
+                <button
+                    class="filtro"
+                    data-categoria="Alta Costura"
+                >
+                    Alta Costura
+                </button>
 
             </div>
 
 
-            <button
-                class="btn-como-llegar"
-                id="btnComoLlegar"
+
+            <!-- BUSCADOR -->
+
+            <div class="buscador-contenedor">
+
+                <input
+                    type="text"
+                    id="buscadorVestidos"
+                    placeholder="Buscar vestido..."
+                >
+
+            </div>
+
+
+
+            <!-- TARJETAS GENERADAS POR JS -->
+
+            <div
+                class="vestidos-grid"
+                id="vestidosGrid"
             >
-                Cómo llegar
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="contacto" id="contacto">
-
-    <div class="contacto-contenido">
-
-        <p class="seccion-etiqueta">
-            Estamos para ayudarte
-        </p>
-
-        <h2>
-            Contacto
-        </h2>
-
-        <p>
-            ¿Tienes alguna consulta? Escríbenos por WhatsApp
-            y te responderemos lo antes posible.
-        </p>
+            </div>
 
 
-        <button
-            class="btn-contacto-whatsapp"
-            id="btnContactoWhatsapp"
+        </section>
+
+
+
+        <!-- =========================
+             PERSONALIZADOS
+        ========================== -->
+
+        <section
+            class="personalizados"
+            id="personalizados"
         >
-            Escribir por WhatsApp
-        </button>
 
 
-        <div class="redes">
+            <div class="personalizados-imagen">
 
-            <a href="#" aria-label="Instagram">
-                IG
-            </a>
+                <img
+                    src="https://images.pexels.com/photos/33209735/pexels-photo-33209735/free-photo-of-elegant-woman-in-black-evening-gown.jpeg?auto=compress&dpr=1&h=750&w=1260"
+                    alt="Mujer con vestido elegante de alta costura"
+                >
 
-            <a href="#" aria-label="Facebook">
-                FB
-            </a>
 
-            <a href="#" aria-label="TikTok">
-                TK
-            </a>
+                <div
+                    class="personalizados-imagen-overlay"
+                >
+                </div>
 
-        </div>
 
-    </div>
+                <div class="personalizados-sello">
 
-</section>
+                    <span>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </span>
 
-    <div class="buscador-contenedor">
-        <input
-            type="text"
-            id="buscadorVestidos"
-            placeholder="Buscar vestido..."
+                    <p>
+                        Diseño exclusivo
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="personalizados-contenido">
+
+                <p class="seccion-etiqueta">
+                    Creado para ti
+                </p>
+
+
+                <h2>
+
+                    Vestidos
+
+                    <span>
+                        Personalizados
+                    </span>
+
+                </h2>
+
+
+                <p class="personalizados-subtitulo">
+                    De una idea a una pieza única.
+                </p>
+
+
+                <p class="personalizados-texto">
+                    En Drakeford Atelier creamos vestidos
+                    pensados especialmente para cada persona
+                    y cada ocasión. Cuéntanos tu idea, estilo
+                    y evento, y trabajaremos contigo para
+                    convertirlo en un diseño exclusivo.
+                </p>
+
+
+
+                <div class="personalizados-servicios">
+
+
+                    <div class="servicio-personalizado">
+
+                        <span>
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Tu idea
+                            </h3>
+
+                            <p>
+                                Cuéntanos qué estilo, colores
+                                y detalles imaginas para tu vestido.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="servicio-personalizado">
+
+                        <span>
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Diseño
+                            </h3>
+
+                            <p>
+                                Definimos juntos los detalles
+                                de la pieza y la propuesta final.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="servicio-personalizado">
+
+                        <span>
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Confección
+                            </h3>
+
+                            <p>
+                                Realizamos el vestido cuidando
+                                cada terminación y detalle.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="servicio-personalizado">
+
+                        <span>
+                            04
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Prueba final
+                            </h3>
+
+                            <p>
+                                Realizamos los últimos ajustes
+                                para lograr el resultado ideal.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <button
+                    class="btn-pedido-personalizado"
+                    id="btnPedidoPersonalizado"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Hacer un pedido por WhatsApp
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             ALQUILER
+        ========================== -->
+
+        <section
+            class="alquiler"
+            id="alquiler"
         >
-    </div>
 
 
-    <div
-        class="vestidos-grid"
-        id="vestidosGrid"
-    >
-    </div>
+            <div class="alquiler-encabezado">
 
-</section>
-
-<footer class="footer">
-
-    <div class="footer-logo">
-
-        <span class="logo-principal">
-            DRAKEFORD
-        </span>
-
-        <span class="logo-secundario">
-            ATELIER
-        </span>
-
-    </div>
+                <p class="seccion-etiqueta">
+                    Una opción para cada ocasión
+                </p>
 
 
-    <p>
-        Elegancia diseñada para ti.
-    </p>
+                <h2>
+                    Alquiler de vestidos
+                </h2>
 
 
-    <div class="footer-links">
+                <p>
+                    Encuentra el vestido ideal para tu evento
+                    sin necesidad de comprarlo. Consulta
+                    disponibilidad, reserva y disfruta de una
+                    experiencia sencilla y personalizada.
+                </p>
 
-        <a href="#inicio">
-            Inicio
-        </a>
-
-        <a href="#coleccion">
-            Colección
-        </a>
-
-        <a href="#alquiler">
-            Alquiler
-        </a>
-
-        <a href="#personalizados">
-            Personalizados
-        </a>
-
-        <a href="#contacto">
-            Contacto
-        </a>
-
-    </div>
+            </div>
 
 
-    <p class="copyright">
-        © 2026 Drakeford Atelier. Todos los derechos reservados.
-    </p>
 
-</footer>
+            <div class="alquiler-pasos">
+
+
+                <article class="paso-alquiler">
+
+                    <span class="paso-numero">
+                        01
+                    </span>
+
+                    <h3>
+                        Elige tu vestido
+                    </h3>
+
+                    <p>
+                        Explora nuestra colección y encuentra
+                        el diseño que mejor se adapte a tu estilo
+                        y ocasión.
+                    </p>
+
+                </article>
+
+
+
+                <article class="paso-alquiler">
+
+                    <span class="paso-numero">
+                        02
+                    </span>
+
+                    <h3>
+                        Consulta disponibilidad
+                    </h3>
+
+                    <p>
+                        Verifica por WhatsApp si el vestido
+                        está disponible para la fecha de tu evento.
+                    </p>
+
+                </article>
+
+
+
+                <article class="paso-alquiler">
+
+                    <span class="paso-numero">
+                        03
+                    </span>
+
+                    <h3>
+                        Reserva
+                    </h3>
+
+                    <p>
+                        Confirma tu reserva y coordina los detalles
+                        directamente con Drakeford Atelier.
+                    </p>
+
+                </article>
+
+
+
+                <article class="paso-alquiler">
+
+                    <span class="paso-numero">
+                        04
+                    </span>
+
+                    <h3>
+                        Retira y disfruta
+                    </h3>
+
+                    <p>
+                        Retira tu vestido según lo acordado
+                        y disfruta de tu evento con total tranquilidad.
+                    </p>
+
+                </article>
+
+
+
+                <article class="paso-alquiler">
+
+                    <span class="paso-numero">
+                        05
+                    </span>
+
+                    <h3>
+                        Devolución
+                    </h3>
+
+                    <p>
+                        Devuelve la prenda en la fecha acordada
+                        siguiendo las condiciones del alquiler.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+
+
+            <div class="alquiler-acciones">
+
+                <button
+                    class="btn-alquiler"
+                    id="btnVerAlquiler"
+                >
+
+                    <i class="fa-solid fa-shirt"></i>
+
+                    Ver vestidos para alquiler
+
+                </button>
+
+
+                <button
+                    class="btn-alquiler-secundario"
+                    id="btnConsultarAlquiler"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Consultar por WhatsApp
+
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             NOSOTROS
+        ========================== -->
+
+        <section
+            class="nosotros"
+            id="nosotros"
+        >
+
+
+            <div class="nosotros-contenido">
+
+                <p class="seccion-etiqueta">
+                    Nuestra esencia
+                </p>
+
+
+                <h2>
+                    Sobre Drakeford Atelier
+                </h2>
+
+
+                <p class="nosotros-texto">
+                    Drakeford Atelier nace con la idea de ofrecer
+                    vestidos elegantes, exclusivos y pensados
+                    para momentos especiales.
+                    Nuestra propuesta combina alquiler,
+                    venta y confección personalizada
+                    en un mismo espacio.
+                </p>
+
+
+                <p class="nosotros-texto">
+                    Buscamos que cada persona encuentre
+                    un vestido que represente su estilo
+                    y la haga sentir única en cada ocasión.
+                </p>
+
+
+
+                <div class="nosotros-valores">
+
+
+                    <div class="valor">
+
+                        <span>
+                            <i class="fa-solid fa-gem"></i>
+                        </span>
+
+                        <h3>
+                            Exclusividad
+                        </h3>
+
+                        <p>
+                            Diseños pensados para destacar.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="valor">
+
+                        <span>
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+
+                        <h3>
+                            Atención personalizada
+                        </h3>
+
+                        <p>
+                            Te acompañamos para encontrar
+                            el vestido ideal.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="valor">
+
+                        <span>
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </span>
+
+                        <h3>
+                            Elegancia
+                        </h3>
+
+                        <p>
+                            Una propuesta moderna
+                            con identidad propia.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             UBICACIÓN
+        ========================== -->
+
+        <section
+            class="ubicacion"
+            id="ubicacion"
+        >
+
+
+            <div class="ubicacion-encabezado">
+
+                <p class="seccion-etiqueta">
+                    Visítanos
+                </p>
+
+
+                <h2>
+                    Nuestra ubicación
+                </h2>
+
+
+                <p>
+                    Visita nuestro atelier y conoce
+                    la colección personalmente.
+                </p>
+
+            </div>
+
+
+
+            <div class="ubicacion-contenido">
+
+
+                <!-- MAPA -->
+
+                <div class="mapa-real">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.8773457162947!2d-55.7062308!3d-25.375426899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945f43029e143e63%3A0xb358a14446efb0ee!2sDrakeford%20Atelier!5e0!3m2!1ses!2spy!4v1791227727015!5m2!1ses!2spy"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        title="Ubicación de Drakeford Atelier"
+                    >
+                    </iframe>
+
+                </div>
+
+
+
+                <!-- INFORMACIÓN -->
+
+                <div class="ubicacion-info">
+
+                    <h3>
+                        Drakeford Atelier
+                    </h3>
+
+
+
+                    <div class="dato-ubicacion">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Dirección
+                            </strong>
+
+                            <p id="direccionTienda">
+                                Ver ubicación en Google Maps
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="dato-ubicacion">
+
+                        <span>
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Horario
+                            </strong>
+
+                            <p>
+                                Lunes a sábado
+                                <br>
+                                09:00 - 18:00
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <button
+                        class="btn-como-llegar"
+                        id="btnComoLlegar"
+                    >
+
+                        <i class="fa-solid fa-route"></i>
+
+                        Cómo llegar
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+
+        <section
+            class="contacto"
+            id="contacto"
+        >
+
+
+            <div class="contacto-contenido">
+
+                <p class="seccion-etiqueta">
+                    Estamos para ayudarte
+                </p>
+
+
+                <h2>
+                    Contacto
+                </h2>
+
+
+                <p>
+                    ¿Tienes alguna consulta?
+                    Escríbenos por WhatsApp
+                    y te responderemos lo antes posible.
+                </p>
+
+
+
+                <button
+                    class="btn-contacto-whatsapp"
+                    id="btnContactoWhatsapp"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Escribir por WhatsApp
+
+                </button>
+
+
+
+                <!-- REDES SOCIALES -->
+
+                <div class="redes">
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                    >
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="TikTok"
+                    >
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
 
     </main>
 
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-logo">
+
+            <span class="logo-principal">
+                DRAKEFORD
+            </span>
+
+            <span class="logo-secundario">
+                ATELIER
+            </span>
+
+        </div>
+
+
+
+        <p>
+            Elegancia diseñada para ti.
+        </p>
+
+
+
+        <div class="footer-links">
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#coleccion">
+                Colección
+            </a>
+
+            <a href="#alquiler">
+                Alquiler
+            </a>
+
+            <a href="#personalizados">
+                Personalizados
+            </a>
+
+            <a href="#nosotros">
+                Nosotros
+            </a>
+
+            <a href="#ubicacion">
+                Ubicación
+            </a>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
+        </div>
+
+
+
+        <p class="copyright">
+            © 2026 Drakeford Atelier.
+            Todos los derechos reservados.
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- =========================
+         WHATSAPP FLOTANTE
+    ========================== -->
 
     <a
         href="#"
@@ -674,123 +1137,169 @@
         id="whatsappFlotante"
         aria-label="Contactar por WhatsApp"
     >
-        ☎
+
+        <i class="fa-brands fa-whatsapp"></i>
+
     </a>
 
-<div class="modal-overlay" id="modalVestido">
-
-    <div class="modal-vestido">
-
-        <button
-            class="modal-cerrar"
-            id="modalCerrar"
-            aria-label="Cerrar"
-        >
-            ×
-        </button>
 
 
-        <div class="modal-imagen">
-            <img
-                id="modalImagen"
-                src=""
-                alt=""
-            >
-        </div>
+    <!-- =========================
+         MODAL VESTIDO
+    ========================== -->
+
+    <div
+        class="modal-overlay"
+        id="modalVestido"
+    >
 
 
-        <div class="modal-info">
-
-            <p
-                class="modal-categoria"
-                id="modalCategoria"
-            >
-                Categoría
-            </p>
-
-
-            <h2 id="modalNombre">
-                Nombre del vestido
-            </h2>
-
-
-            <p
-                class="modal-estado"
-                id="modalEstado"
-            >
-                Disponible
-            </p>
-
-
-            <div class="modal-precios">
-
-                <div class="modal-precio-box">
-
-                    <span>
-                        Precio de compra
-                    </span>
-
-                    <strong id="modalPrecioVenta">
-                        Gs. 0
-                    </strong>
-
-                </div>
-
-
-                <div class="modal-precio-box">
-
-                    <span>
-                        Precio de alquiler
-                    </span>
-
-                    <strong id="modalPrecioAlquiler">
-                        Gs. 0
-                    </strong>
-
-                </div>
-
-            </div>
-
-
-            <div class="modal-detalle-linea">
-
-                <span>Tallas disponibles</span>
-
-                <strong id="modalTallas">
-                    -
-                </strong>
-
-            </div>
-
-
-            <div class="modal-descripcion">
-
-                <h3>
-                    Descripción
-                </h3>
-
-                <p id="modalDescripcion">
-                    Descripción del vestido.
-                </p>
-
-            </div>
+        <div class="modal-vestido">
 
 
             <button
-                class="modal-btn-reservar"
-                id="modalReservar"
+                class="modal-cerrar"
+                id="modalCerrar"
+                aria-label="Cerrar"
             >
-                Reservar por WhatsApp
+                <i class="fa-solid fa-xmark"></i>
             </button>
+
+
+
+            <div class="modal-imagen">
+
+                <img
+                    id="modalImagen"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+
+
+            <div class="modal-info">
+
+
+                <p
+                    class="modal-categoria"
+                    id="modalCategoria"
+                >
+                    Categoría
+                </p>
+
+
+
+                <h2 id="modalNombre">
+                    Nombre del vestido
+                </h2>
+
+
+
+                <p
+                    class="modal-estado"
+                    id="modalEstado"
+                >
+                    Disponible
+                </p>
+
+
+
+                <div class="modal-precios">
+
+
+                    <div class="modal-precio-box">
+
+                        <span>
+                            Precio de compra
+                        </span>
+
+                        <strong id="modalPrecioVenta">
+                            Gs. 0
+                        </strong>
+
+                    </div>
+
+
+
+                    <div class="modal-precio-box">
+
+                        <span>
+                            Precio de alquiler
+                        </span>
+
+                        <strong id="modalPrecioAlquiler">
+                            Gs. 0
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="modal-detalle-linea">
+
+                    <span>
+                        Tallas disponibles
+                    </span>
+
+                    <strong id="modalTallas">
+                        -
+                    </strong>
+
+                </div>
+
+
+
+                <div class="modal-descripcion">
+
+                    <h3>
+                        Descripción
+                    </h3>
+
+                    <p id="modalDescripcion">
+                        Descripción del vestido.
+                    </p>
+
+                </div>
+
+
+
+                <button
+                    class="modal-btn-reservar"
+                    id="modalReservar"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Reservar por WhatsApp
+
+                </button>
+
+
+            </div>
+
 
         </div>
 
+
     </div>
 
-</div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
     <script src="js/vestidos.js"></script>
+
     <script src="js/app.js"></script>
 
+
 </body>
+
 </html>
+```

@@ -2480,3 +2480,145 @@ body.modal-abierto {
     }
 
 }
+
+.mapa-real {
+    min-height: 420px;
+
+    overflow: hidden;
+
+    border: 1px solid #292929;
+
+    background: #111;
+}
+
+
+.mapa-real iframe {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    min-height: 420px;
+
+    border: 0;
+
+    filter:
+        grayscale(25%)
+        contrast(1.05)
+        brightness(0.85);
+}
+
+/* =========================
+   ANIMACIONES DE ENTRADA
+========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* variantes */
+
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* =========================
+   HEADER AL HACER SCROLL
+========================= */
+
+.header {
+    transition:
+        background 0.35s ease,
+        box-shadow 0.35s ease,
+        height 0.35s ease;
+}
+
+.header.scrolled {
+    height: 72px;
+
+    background:
+        rgba(5, 5, 5, 0.96);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   MICROINTERACCIONES
+========================= */
+
+.vestido-card,
+.valor,
+.paso-alquiler,
+.btn,
+.btn-alquiler,
+.btn-alquiler-secundario,
+.btn-pedido-personalizado,
+.btn-contacto-whatsapp,
+.btn-como-llegar {
+    will-change: transform;
+}
+
+
+/* suaviza imágenes */
+
+img {
+    user-select: none;
+}
+
+
+/* selección de texto */
+
+::selection {
+    background: var(--dorado);
+    color: #111;
+}
+
+.redes a i,
+.beneficio-icono i,
+.personalizados-sello i,
+.dato-ubicacion i,
+.whatsapp-flotante i {
+    pointer-events: none;
+}
+
+.whatsapp-flotante i {
+    font-size: 28px;
+}
