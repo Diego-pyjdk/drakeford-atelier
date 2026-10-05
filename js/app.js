@@ -654,11 +654,9 @@ btnComoLlegar.addEventListener(
     "click",
     () => {
 
-        const direccion =
-            "Drakeford Atelier Paraguay";
 
         const url =
-            `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(direccion)}`;
+            "https://maps.app.goo.gl/CXAT71qBPJKhGjxT6";
 
         window.open(
             url,
