@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Compara la identidad original de Drakeford Atelier con tres paletas de color en una versión privada e interactiva.">
+  <meta name="theme-color" content="#10100f">
+  <title>Drakeford Atelier · Estudio de color</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/studio.css">
+  <script defer src="js/studio.js"></script>
+</head>
+<body>
+  <header class="studio-header">
+    <a class="wordmark" href="./" aria-label="Drakeford Atelier, estudio de color">DRAKEFORD<span>ATELIER</span></a>
+    <div class="studio-title"><span class="eyebrow">ESTUDIO DE COLOR</span><h1>La misma esencia, nuevos matices.</h1></div>
+    <span class="private-label">Versión privada</span>
+  </header>
+  <main>
+    <section class="control-panel" aria-label="Opciones de comparación">
+      <div class="palette-heading"><h2>Explora una paleta</h2><p>Tipografía, fotografía y carácter Drakeford.</p></div>
+      <div class="palette-list" role="group" aria-label="Paleta alternativa">
+        <button class="palette" data-palette="original" aria-pressed="false"><span class="swatches"><i style="--swatch:#090909"></i><i style="--swatch:#d6ad60"></i><i style="--swatch:#f5efe6"></i></span><span>Oro original<small>Negro · dorado</small></span></button>
+        <button class="palette selected" data-palette="burgundy" aria-pressed="true"><span class="swatches"><i style="--swatch:#411324"></i><i style="--swatch:#f29fbb"></i><i style="--swatch:#fff0f4"></i></span><span>Borgoña<small>Vino · rosa</small></span></button>
+        <button class="palette" data-palette="emerald" aria-pressed="false"><span class="swatches"><i style="--swatch:#103d33"></i><i style="--swatch:#8de5bf"></i><i style="--swatch:#f0fff7"></i></span><span>Esmeralda<small>Verde · jade</small></span></button>
+        <button class="palette" data-palette="sapphire" aria-pressed="false"><span class="swatches"><i style="--swatch:#152958"></i><i style="--swatch:#a2c7ff"></i><i style="--swatch:#f0f6ff"></i></span><span>Zafiro<small>Azul · hielo</small></span></button>
+      </div>
+    </section>
+    <div class="view-toolbar">
+      <div class="segmented" role="group" aria-label="Modo de comparación"><button data-view="compare" aria-pressed="true">Comparar</button><button data-view="single" aria-pressed="false">Vista única</button></div>
+      <div class="segmented device-controls" role="group" aria-label="Tamaño de vista"><button data-device="desktop" aria-pressed="true">Escritorio</button><button data-device="mobile" aria-pressed="false">Móvil</button></div>
+      <label class="sync-control"><input type="checkbox" id="syncScroll" checked> Sincronizar desplazamiento</label>
+      <a class="open-site" href="index.html?palette=burgundy" id="openSite" target="_blank" rel="noopener">Abrir sitio completo</a>
+    </div>
+    <div class="mobile-tabs segmented" role="group" aria-label="Vista visible en la comparación"><button data-side="original" aria-pressed="false">Original</button><button data-side="alternative" aria-pressed="true">Alternativa</button></div>
+    <section class="preview-grid" id="previewGrid" data-view="compare" data-device="desktop" data-side="alternative" aria-label="Vistas del sitio">
+      <article class="preview-pane original-pane"><div class="preview-caption"><span><i class="caption-swatch original-swatch"></i>ESTILO ACTUAL</span><strong>Negro & oro</strong></div><div class="frame-stage"><iframe id="originalFrame" title="Sitio Drakeford con su estilo actual negro y dorado" src="index.html?palette=original&baseline=1"></iframe></div></article>
+      <article class="preview-pane alternative-pane"><div class="preview-caption"><span><i class="caption-swatch" id="alternativeSwatch"></i>PALETA ALTERNATIVA</span><strong id="paletteName">Borgoña & rosa</strong></div><div class="frame-stage"><iframe id="alternativeFrame" title="Sitio Drakeford con la paleta alternativa" src="index.html?palette=burgundy"></iframe></div></article>
+    </section>
+    <div class="studio-footer"><p id="paletteDescription" role="status" aria-live="polite">Borgoña y rosa: un matiz cálido para la misma elegancia.</p><button class="reset-button" id="resetPalette">Volver al oro original</button><span>Los cambios se guardan solo en este dispositivo.</span></div>
+  </main>
+</body>
+</html>

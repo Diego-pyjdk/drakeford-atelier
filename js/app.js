@@ -34,7 +34,8 @@ function abrirWhatsApp(mensaje) {
 
     window.open(
         url,
-        "_blank"
+        "_blank",
+        "noopener,noreferrer"
     );
 }
 
@@ -170,7 +171,7 @@ function mostrarVestidos(lista) {
                 <div class="vestido-imagen">
 
                     <img
-                        src="${vestido.imagen}"
+                        src="${vestido.imagen}" loading="lazy" decoding="async"
                         alt="Vestido ${vestido.nombre}"
                     >
 
@@ -336,7 +337,7 @@ function mostrarVestidos(lista) {
 
                         Ver vestido
 
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <i class="fa-regular fa-eye"></i>
 
                     </button>
 
@@ -761,78 +762,6 @@ modalReservar.addEventListener(
 
 
 /* =========================================================
-   FAVORITOS
-========================================================= */
-
-document.addEventListener(
-    "click",
-    event => {
-
-        const boton =
-            event.target.closest(
-                ".vestido-favorito"
-            );
-
-
-        if (!boton) {
-            return;
-        }
-
-
-        const icono =
-            boton.querySelector(
-                "i"
-            );
-
-
-        if (!icono) {
-            return;
-        }
-
-
-        if (
-            icono.classList.contains(
-                "fa-regular"
-            )
-        ) {
-
-            icono.classList.remove(
-                "fa-regular"
-            );
-
-
-            icono.classList.add(
-                "fa-solid"
-            );
-
-
-            boton.classList.add(
-                "favorito-activo"
-            );
-
-        } else {
-
-            icono.classList.remove(
-                "fa-solid"
-            );
-
-
-            icono.classList.add(
-                "fa-regular"
-            );
-
-
-            boton.classList.remove(
-                "favorito-activo"
-            );
-
-        }
-
-    }
-);
-
-
-/* =========================================================
    MOSTRAR CATÁLOGO INICIAL
 ========================================================= */
 
@@ -1011,7 +940,8 @@ btnComoLlegar.addEventListener(
 
         window.open(
             url,
-            "_blank"
+            "_blank",
+            "noopener,noreferrer"
         );
 
     }

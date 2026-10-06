@@ -13,7 +13,7 @@ const vestidos = [
             "Vestido de novia de estilo elegante y romántico, con detalles delicados y una silueta pensada para resaltar la figura. Ideal para ceremonias clásicas y celebraciones sofisticadas.",
 
         imagen:
-            "https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=900&q=85"
+            "assets/photos/dress-4.jpg"
     },
 
 
@@ -30,7 +30,7 @@ const vestidos = [
             "Vestido de gala con caída elegante y presencia sofisticada. Diseñado para eventos nocturnos, cenas formales y celebraciones especiales.",
 
         imagen:
-            "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=900&q=85"
+            "assets/photos/dress-2.jpg"
     },
 
 
@@ -47,7 +47,7 @@ const vestidos = [
         "Una propuesta moderna para fiestas y eventos especiales. Combina elegancia, comodidad y un diseño pensado para destacar.",
 
     imagen:
-        "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=900&q=85"
+        "assets/photos/dress-1.jpg"
     },
 
 
@@ -64,7 +64,7 @@ const vestidos = [
             "Vestido de XV años de estilo delicado y juvenil, con una silueta protagonista para una celebración inolvidable.",
 
         imagen:
-            "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=900&q=85"
+            "assets/photos/dress-5.jpg"
     },
 
 
@@ -81,7 +81,7 @@ const vestidos = [
             "Diseño exclusivo de alta costura pensado para quienes buscan una pieza única, trabajada con especial atención en acabados y detalles.",
 
         imagen:
-            "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?auto=format&fit=crop&w=900&q=85"
+            "assets/photos/dress-6.jpg"
     },
 
 
@@ -98,7 +98,7 @@ const vestidos = [
             "Vestido de gala sofisticado, ideal para recepciones, cenas elegantes y eventos formales.",
 
         imagen:
-            "https://images.unsplash.com/photo-1612336307429-8a898d10e223?auto=format&fit=crop&w=900&q=85"
+            "assets/photos/dress-7.jpg"
     }
 
 ];
